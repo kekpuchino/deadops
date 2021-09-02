@@ -1,0 +1,5 @@
+FROM python:3
+WORKDIR .
+RUN pip3 install pytelegrambotapi
+RUN wget https://github.com/kekpuchino/deadops/blob/main/telebot_v1.py
+CMD python3 telebot_v1.py
